@@ -1,6 +1,6 @@
 {
   "name": "egg-wsocket",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Egg websocket plugin",
   "eggPlugin": {
     "name": "wsocket"
@@ -42,7 +42,8 @@
     "app.js",
     "agent.js",
     "config",
-    "app"
+    "app",
+    "lib"
   ],
   "ci": {
     "version": "8, 10"
