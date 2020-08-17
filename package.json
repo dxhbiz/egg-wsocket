@@ -1,16 +1,21 @@
 {
   "name": "egg-wsocket",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Egg websocket plugin",
   "eggPlugin": {
     "name": "wsocket"
   },
   "keywords": [
     "egg",
     "eggPlugin",
-    "egg-plugin"
+    "egg-plugin",
+    "websocket"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@eggjs/router": "^2.0.0",
+    "koa-compose": "^4.1.0",
+    "ws": "^7.3.1"
+  },
   "devDependencies": {
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
