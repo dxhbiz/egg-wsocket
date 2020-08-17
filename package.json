@@ -1,6 +1,6 @@
 {
   "name": "egg-wsocket",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Egg websocket plugin",
   "eggPlugin": {
     "name": "wsocket"
@@ -49,12 +49,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-wsocket.git"
+    "url": "git+https://github.com/dxhbiz/egg-wsocket.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/dxhbiz/egg-wsocket/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-wsocket#readme",
+  "homepage": "https://github.com/dxhbiz/egg-wsocket#readme",
   "author": "",
   "license": "MIT"
 }
