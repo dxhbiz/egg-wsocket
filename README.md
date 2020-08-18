@@ -48,6 +48,39 @@ exports.wsocket = {
 };
 ```
 
+## Router
+
+```js
+// {app_root}/app/router.js
+app.wsocket.route('/ws', app.controller.home.ws);
+```
+
+## Controller
+
+```js
+// {app_root}/controller/home.js
+import { Controller } from 'egg';
+
+export default class HomeController extends Controller {
+  async ws() {
+    const { ctx } = this;
+    if (!ctx.wsocket) {
+      throw new Error('this function can only be use in egg-wsocket router');
+    }
+
+    console.log('client connected');
+
+    ctx.wsocket
+      .on('message', (msg) => {
+        console.log('receive', msg);
+      })
+      .on('close', (code, reason) => {
+        console.log('websocket closed', code, reason);
+      });
+  }
+}
+```
+
 see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Example
